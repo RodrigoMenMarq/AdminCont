@@ -1,0 +1,308 @@
+@import url('fonts.css');
+@import url('calendario.css');
+@import url('secciones1.css');
+
+/* general */
+
+	*{ margin: 0px; padding: 0px}
+	.tLeft 		{ text-align: left 		!important; }
+	.tCenter 	{ text-align: center 	!important; }
+	.tRight 	{ text-align: right 	!important; text-align: -webkit-right;}
+	.tAlinear 	{ text-align: justify	!important; }
+	.fRight 	{ float: right 			!important; }
+
+	.fLeft	{ float: left 			!important; }
+	strong{font-family: 'Avenir_Next_Demi_Bold';}
+medium{font-family: 'AvenirNextLTPro-Medium';	}
+	.cursor{ cursor: pointer;}
+	.clear{ clear: both;}
+
+/* scroll */
+*::-webkit-scrollbar { width: 6px; }
+*::-webkit-scrollbar-track { background-color: #f3f3f3; }
+*::-webkit-scrollbar-thumb { background-color: #afafaf; }
+
+html, body{
+	font-family: 'Avenir_Next_Regular';
+	background-color:#fff;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #333333;
+	min-width: 768px;
+	height: 100%
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+	/*Header*/
+	.header {
+    padding: 5px 0;
+    background-color: #FFFFFF;
+    border-bottom: solid 2px #ffd520;
+	width: 100%;
+	    height: 50px;
+}
+	.tblHeader{
+		width: 99%;
+    	display: table;
+	}
+	.headerMenu {
+    width: 100px;
+    margin: auto;
+    float: left;
+}
+	.headerLogo{
+    	width: 130px;
+		margin: auto;
+	}
+.headerUser {
+    width: 500px;
+    margin: auto;
+    position: relative;
+    float: right;
+    margin-top: -58px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 13px;
+    line-height: 15px;
+}
+	.headerMenu{text-align: left; }
+	.headerLogo{text-align: center;}
+
+	.imgHamburgesa {
+    padding: 10px 19px 18px 30px;
+    width: 21px;
+    height: 20px;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+	img#imgLogo {
+    width: 132px;
+    padding: 0px 0px 0px 0px;
+	}
+	div.name, div.pic-name, div.user-menu, div.fecha{
+    display: inline-block;
+    vertical-align: middle;
+}
+div.name {
+    margin-top: 27px;
+}
+div.name b{font-family: 'Avenir_Next_Demi_Bold';}
+div.pic {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 15px;
+    background: #FFFFFF no-repeat center center;
+    border: solid 2px #B9B7AC;
+    border-radius: 50%;
+    background-size: 122%;
+	margin-top: 12px;
+}
+	div.pic-name span {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 15px;
+    right: -5px;
+    background: #EC100F;
+    color: #FFFFFF;
+    line-height: 17px;
+    border-radius: 50%;
+    font-size: 9px;
+}
+	.user-menu {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.fecha {
+    margin: 16px 0px 0px 10px;
+    font-size: 14px;
+}
+.fecha span {
+    font-size: 10.2px;
+}
+/*Titulo*/
+	div.title {
+    background-color: #f9f9f9;
+    padding: 0px 0 6px 0px;
+    height: 50px;
+}
+	#title div {
+    float: left;
+}
+	div.title .wrapper {
+    position: relative;
+    width: 93%;
+    margin-left: 30px;
+}
+	div.title div.h2 a {
+    color: #7E7E7E;
+    text-decoration: none;
+	font-size: 12px;
+}
+
+div.title h1 {
+    font-size: 30px;
+    color: #43413B;
+    /* margin-top: 1px; */
+    font-weight: 800;
+    line-height: 30px;
+}
+
+div.nav {  padding: 0px;}
+
+div.nav div.wrapper {
+    position: relative;
+}
+.tblMenu {
+    width: 100%;
+}
+.tblMenu tr td {
+    padding: 16px 10px 10px 0px;
+}
+
+.pregunta {
+    float: right;
+    padding: 10px 19px;
+}
+.pregunta {float: right;    padding: 10px 19px;}
+
+a.btnFunc {
+    text-decoration: none;
+    color: #5fac98;
+    font-size: 13px;
+    margin: 5px;
+    padding: 2px 5px;
+}
+a.btnFunc span{font-family: 'Avenir_Next_Bold';}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: #f8f7f7;
+    bottom: 0px;
+    position: fixed;
+	text-align: center
+}
+
+.tblFooter {
+    width: 700px;
+    font-size: 10px;
+    margin: 10px;
+    color: #333333;
+    text-align: center;
+    margin: 7px auto;
+}
+.tblFooter tr td:nth-child(1){ border-right: 2px solid #006241;padding: 0px 3px 0px 0px;
+}
+
+
+img.imgPregunta {
+    width: 16px;
+}
+.zoomCanvas{zoom:100%;}
+
+@media screen and (max-width:1100px) {
+div.name {display: none;}
+}
+@media screen and (max-width:1100px) {
+a.btnFunc {
+    font-size: 12px;
+    margin: 5px;
+    padding: 2px 3px;
+}
+}
+@media screen and (max-width: 1024px){
+	.headerMenu{text-align: left; }
+	.headerLogo{text-align: left;padding: 0px 0px 0px 24px;}
+	.headerUser{text-align: right;}
+	.zoomCanvas{zoom:80%}
+}
+
+
+@media screen and (max-width:1024px) {
+
+
+
+}
+
+.ui-widget-overlay{
+    background: #000 !important;
+    opacity: .5 !important;
+}
+
+div.ui-dialog-titlebar{
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ffd51d !important;
+    font-weight: normal;
+}
+
+div.icaliffuncname{
+    /*color:green;*/
+    margin-bottom: 30px;
+    font-family: 'Avenir_Next_Demi_Bold';
+    font-weight: bold;
+    text-align: center;
+}
+
+div.itemCalif{
+    /*border: thin solid green;*/
+    width: 50%;
+    display:inline-block;
+}
+div.itemCalif > div.imateria,
+div.itemCalif > div.icalificacion{
+    display:block;
+    width: 50%;
+    position:relative;
+    float:left;
+}
+div.itemCalif > div.icalificacion > div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.itemCalif > div.icalificacion > div > div.ilike{
+    color: green;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+div.itemCalif > div.icalificacion > div > div.idislike{
+    color: red;
+    vertical-align: middle;
+}
+
+div.itemCalif > div.icalificacion > div > div.ilike > img,
+div.itemCalif > div.icalificacion > div > div.idislike > img{
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.ui-icon-closethick{
+    /*background-image: url("./assets/img/cerrar.png");*/
+    background-image: url("./../img/cerrar.png");
+    background-position: initial !important;
+    background-size: 16px !important;
+}
+
+button.ui-dialog-titlebar-close{
+    border: none !important;
+}
+
+
+a.modalFun_viewDetalle,
+a.modaFun_viewlEvaluacion{
+    cursor: pointer;
+}

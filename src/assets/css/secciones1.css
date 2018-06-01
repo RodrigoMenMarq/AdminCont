@@ -1,0 +1,300 @@
+.apagar {
+    pointer-events: none;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.btnguardar, .btneditar {display: none}
+.agendaA {width: 26% !important; float: left; margin-right: 4%;}
+.agendaB {width: 40% !important; float: left;  text-align: center;}
+
+
+.itemUser {width: 33.33% ; float: left; margin: 15px 0px;  font-size: .9em;  height: 107px !important; overflow: hidden; transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out; }
+
+.verright {float: right; text-decoration: none; font-size: 14px; color: #111111; font-family: 'Avenir_Next_Demi_Bold';  cursor: pointer;}
+
+.uavatar {   position: relative;   width: 120px;   float: left; }
+.uavatar .usuario {width: 80px; height:  80px; margin: 5px 0px 0px 10px !important; border: 3px; overflow: hidden; transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out; }
+.uavatar .usuario img {width: 100%; }
+
+.inneruser {width: 100%; margin: 0 auto;  }
+.utxt   { overflow: hidden; height: 120%; margin-right: 25px;}
+.ihead  {
+  font-family: 'Avenir_Next_Demi_Bold';
+  font-size: 1.21em; margin-bottom:
+  10px; background-color: ; height: 40px; transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out; width: 270px}
+
+.ilikes { font-family: 'AvenirNextLTPro-Medium';float: right; width: 60px; color: #0081ab; text-align: right; font-size: 1.4em; margin-left: 15px;}
+.ilikes a { text-align: right; text-decoration: none;   display: block;  color: #49af26; font-size: .65em; line-height: 20px; transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out; }
+.ilikes a:nth-child(1) { margin-bottom: 2px;}
+.ilikes a:nth-child(2) { color: #b92f2e;}
+.ilikes a img {float: left; width: 20px !important; transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out; }
+
+.h350 { height: 350px !important; }
+.overflowcol { width: 90%;  height: 270px; overflow-y: auto; margin: 0 auto; display: block; }
+.overflowcol .itemUser1 {width: 100% !important; margin: 0px !important;}
+.item h3 { height: 50px; vertical-align: middle;}
+
+.perfilnamer {width: 300px; float: left;  padding: 15px 0px 25px 25px;}
+.tverde { color: #49af26; }
+.trojo  { color: #b92f2e; }
+
+.item .uavatar1 {position: relative;}
+.eliminar {
+    width: 15px; position: absolute; top: 33px; left: 17px; z-index: 1;
+}
+.AvisoUpdate { position: fixed; bottom:  -65px; left: 0px; width: 100%;  text-align: center;
+    z-index: 1; }
+.AvisoUpdate span {
+   background-color: #303030; border-radius: 10px 10px 0px 0px; padding: 0px 30px 20px 30px; color: #ffffff; font-size: 1.2em; height: 45px; line-height: 45px; display: inline-block;
+    animation-name: sube;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    position: relative;
+    bottom: 45px;
+    z-index: 10000;
+}
+.AvisoUpdate span a { color: #ee7201; font-size: 1.1em; text-decoration: none; padding: 0px 15px; }
+
+
+
+.AvisoUpdate2 { position: fixed; bottom:  -65px; left: 0px; width: 100%;  text-align: center;
+    z-index: 1; }
+.AvisoUpdate2hide { position: fixed; bottom:  -65px; left: 0px; width: 100%;  text-align: center;
+        z-index: .-1; }
+.AvisoUpdate2 span {
+   background-color: #303030; border-radius: 10px 10px 0px 0px; padding: 0px 30px 20px 30px; color: #ffffff; font-size: 1.2em; height: 45px; line-height: 45px; display: inline-block;
+    animation-name: sube;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    position: relative;
+    bottom: 45px;
+    z-index: 10000;
+}
+.AvisoUpdate2 span a { color: #ee7201; font-size: 1.1em; text-decoration: none; padding: 0px 15px; }
+
+
+@keyframes sube {
+    0%   {position: relative; bottom: 0px;}
+    25%  {position: relative; bottom: 0px;}
+    70%  {position: relative; bottom: 50px;}
+    100% {position: relative; bottom: 45px;}
+}
+
+.zebra {
+    width: 100%;
+    height: 550px;
+    overflow-y: auto;
+
+}
+.zebra div {
+    float: left;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+}
+
+.zebra div:nth-child(3n+1) {
+    width: 31.33%;
+    margin-right: 2%;
+}
+.zebra div:nth-child(3n+2) {
+    width: 31.33%;
+    margin: 0 1%;
+}
+.zebra div:nth-child(3n+3) {
+    width: 31.33%;
+    margin-left: 2%;
+}
+
+
+
+.zebra div:nth-child(1),
+.zebra div:nth-child(2),
+.zebra div:nth-child(3),
+.zebra div:nth-child(7),
+.zebra div:nth-child(8),
+.zebra div:nth-child(9),
+.zebra div:nth-child(13),
+.zebra div:nth-child(14),
+.zebra div:nth-child(15),
+.zebra div:nth-child(19),
+.zebra div:nth-child(20),
+.zebra div:nth-child(21),
+.zebra div:nth-child(25),
+.zebra div:nth-child(26),
+.zebra div:nth-child(27),
+.zebra div:nth-child(31),
+.zebra div:nth-child(32),
+.zebra div:nth-child(33),
+.zebra div:nth-child(37),
+.zebra div:nth-child(38),
+.zebra div:nth-child(39),
+.zebra div:nth-child(43),
+.zebra div:nth-child(44),
+.zebra div:nth-child(45),
+.zebra div:nth-child(49),
+.zebra div:nth-child(50),
+.zebra div:nth-child(51),
+.zebra div:nth-child(55),
+.zebra div:nth-child(56),
+.zebra div:nth-child(57),
+.zebra div:nth-child(61),
+.zebra div:nth-child(62),
+.zebra div:nth-child(63),
+.zebra div:nth-child(67),
+.zebra div:nth-child(68),
+.zebra div:nth-child(69),
+.zebra div:nth-child(73),
+.zebra div:nth-child(74),
+.zebra div:nth-child(75),
+.zebra div:nth-child(79),
+.zebra div:nth-child(80),
+.zebra div:nth-child(81),
+.zebra div:nth-child(85),
+.zebra div:nth-child(86),
+.zebra div:nth-child(87),
+.zebra div:nth-child(91),
+.zebra div:nth-child(92),
+.zebra div:nth-child(93),
+.zebra div:nth-child(97),
+.zebra div:nth-child(98),
+.zebra div:nth-child(99),
+.zebra div:nth-child(103),
+.zebra div:nth-child(104),
+.zebra div:nth-child(105)
+ {
+    background-color: #f2f2f2;
+}
+
+.comprimido tr td {
+    padding: 1px 7px 5px 1px !important;
+}
+
+
+.hideinput {width: 50% !important; display: none; margin: 0 auto !important;}
+.hideinput input[type="text"] { width: 100%; margin: 0 auto;  }
+.menos,
+.mas { position: absolute; right: 10px; top: 0px; display: none;}
+.editar { position: absolute; right: 50px; top: 0px; display: none;}
+.menos img,
+.mas img,
+.editar img {width: 25px !important; vertical-align: middle;}
+
+
+.h50px { height: 52px !important; margin: 10px 0px; }
+
+.w340px { width: 340px; }
+.w280px { width: 280px; }
+.w420px { width: 420px; }
+
+.owl-dot {
+    display: none !important;
+}
+
+
+
+.item  {
+	background-position: center center;
+            width: 100% !important;
+            /*height: 70px !important;*/
+            border: 0px;
+            background-size: cover;
+        }
+        .owl-dots {
+        	display: block;
+            margin-top: 0px !important;
+            position: relative;
+            top: -125px;
+            margin-bottom: -25px;
+        }
+        .owl-prev {
+        	background-image: url(../img/flecha-slider-izquierda.svg) !important;
+        	background-position: top left;
+        	background-repeat: no-repeat;
+        	background-color:  ;
+        	width: 40px;
+        	height: 100px;
+        	position: absolute;
+        	top: 0%;
+        	left: -50px;
+        	z-index: 100000;
+        }
+        .owl-next {
+        	background-image: url(../img/flecha-slider-derecha.svg) !important;
+        	background-position: top right;
+        	background-repeat: no-repeat;
+        	background-color:  ;
+        	width: 40px;
+        	height: 100px;
+        	position: absolute;
+        	top: 0%;
+        	right: -50px;
+        	z-index: 1000000;
+        }
+
+
+        .dovcenter .owl-prev {
+            top: 30% !important;
+        }
+        .dovcenter .owl-next {
+            top: 30% !important;
+        }
+
+
+.mt0px {
+    margin-top: 0px !important;
+}
+hr {
+    border: 0px;
+    border-top: 2px solid #fdd330;
+    margin-bottom: 10px;
+}
+
+.uavatar1 {position: relative;}
+
+.colcom {
+    width: 140px !important;
+    position: relative;
+    float: left;
+    text-align: right;
+    margin-right: 25px;
+}
+.coltxt {
+    overflow: auto;
+    max-height: 170px;
+}
+
+.justify  {
+    text-align: justify;
+}
+.w98 {
+    width: 98% !important;
+    white-space: pre-line;
+}
+
+p.w98 {
+    width: 98% !important;
+    white-space: initial;
+}
+
+
+/*Fin canvas*/
+@media screen and (max-width:1270px) {
+
+.uavatar .usuario {width: 75px; height:  75px;       transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out;  }
+.itemUser {font-size: .7em;       transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out;  }
+.ihead  {  height: 30px;       transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out;  }
+.ilikes { width: 40px; font-size: 1.4em; margin-left: 10px;    transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out;  }
+.ilikes a { font-size: .65em; line-height: 15px;    transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out;  }
+.ilikes a img {float: left; width: 13px !important;    transition: all 0.3s ease-out;    -moz-transition: all 0.3s ease-out;    -webkit-transition: all 0.3s ease-out;  }
+
+}
+
+
+@media screen and (max-width:1150px) {
+
+
+}
